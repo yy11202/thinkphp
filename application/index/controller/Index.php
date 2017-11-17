@@ -5,6 +5,6 @@ class Index
 {
     public function index()
     {
-        echo "Hello!";
+        return $this->fetch();
     }
 }
