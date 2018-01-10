@@ -1,0 +1,428 @@
+@charset "gb2312";
+/*Reset*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{padding:0;margin:0;}
+body{font:12px/1.5 "微软雅黑",Tahoma,Arial,'宋体',sans-serif;color:#333333;background:#90c4f6;}
+button,input,select,textarea{vertical-align:middle;}
+ol,ul{list-style:none;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+fieldset,img{border:0;vertical-align:top;}
+table{border-collapse:collapse;border-spacing:0;}
+address,caption,cite,code,dfn,em,th,var{font-weight:normal;font-style:normal;}
+a{text-decoration:none;cursor:pointer;color:#0e7bb8;}
+a:hover{text-decoration:none;color:#0069bd;}
+/*sprite*/
+.tip-t,.tip-b,.tip em,.regist .tip span,.other input,.err{ background:url(imgbg.png) no-repeat;}
+.regist .ipt,.regist .btn,.regist .ipt1,.btn1{background:url(form.png) no-repeat;}
+/*header*/
+.header{ width:1000px; height:79px; margin:0 auto; background:#fff url(head.jpg) no-repeat center top; overflow:hidden;}
+.logo{ float:left; width:301px; height:50px; background:url(logo.png) no-repeat; margin:15px 0 0 140px; line-height:1000px; display:inline; overflow:hidden;}
+.logo a{ display:block; width:125px; height:50px;}
+.header span{ float:right; padding:40px 135px 0 0;padding-top:43px\9; font-size:14px; font-family:"微软雅黑",simsun; color:#0C4A85; font-weight:bold;line-height:1;}
+.header span a{color:#32638E;font-size:20px;display:inline-block;margin-left:5px;border-bottom:1px solid #32638E;line-height:1.2;line-height:1\9;}
+.header span a:hover{color:#0069BD;}
+/*wrap*/
+.wrap{ clear:both; padding-top:78px;width:1000px; height:463px; margin:0 auto; background:#fff url(wrapbg.jpg) no-repeat;}
+.login{ height:401px; background:#fff url(loginbg.jpg) no-repeat;}
+.login .regist li span{ width:215px;}
+.login .regist .find{overflow:hidden;width:490px;height:25px;line-height:1.231;}
+.login .regist .find label{float:left;padding-left:222px;color:#888;}
+.login .regist .find a{float:right;}
+.login .regist .act{padding:0 0 0 222px;}
+.login .tip{ left:505px;}
+/*regist*/
+.regist{ clear:both; padding:100px 130px 0;}
+.regist li{ clear:both; zoom:1; height:53px;line-height:53px;position:relative; padding-bottom:13px; z-index:0;}
+.regist .username,.regist .pwd{height:53px;line-height:53px;}
+.regist .username span,.regist .pwd span{height:53px;line-height:53px;}
+.regist li span{ float:left; width:240px; height:53px;padding-right:5px;line-height:53px;text-align:right;color:#666;font-size:20px; font-family:"微软雅黑",simsun,arial,serif,sans-serif; font-weight:bold;}
+.regist li a{ text-decoration:underline; font-family:"宋体";}
+.regist .ipt,.regist .ipt1{ float:left; width:265px; height:25px; color:#666;font:bold 20px/24px arial,simsun;line-height:25px; _background-attachment:fixed; padding:14px 6px; border:none; outline:none;}
+.regist .ipt{background-position:0 2px;}
+.regist .ipt-cur{background-position:0 -54px;}
+.regist .ipt1{ width:164px; background-position:0 -110px;}
+.regist .ipt1-cur{ background-position:0 -166px;}
+.regist .e-mail span,.regist .username span{_margin-right:-3px;}
+.regist .iptarea-email{zoom:1;overflow:hidden;background:url(form.png) no-repeat;}
+.regist .iptarea-email .ipt{width:260px;margin-left:2px;background:none;}
+.regist .yz{ float:left; width:100px; line-height:22px; padding:2px 0 0 0;}
+.regist .yz img{ vertical-align:middle; display:block;}
+.tip{ position:absolute; width:203px; top:2px; left:530px;}
+.correct,.wrong,.login .tip{top:10px;}
+.tip-t,.tip-b{ clear:both; overflow:hidden; height:3px; background-position:0 -166px;}
+.tip-c{ line-height:14px; font-size:12px; background:url(tipx.png) repeat-x top #ffefce; border-left:1px solid #e3bc91; border-right:1px solid #e3bc91; padding:5px 10px; font-family:"微软雅黑"; color:#803d01;}
+.tip-b{ background-position:0 -169px;}
+.tip em{ position:absolute; width:5px; height:9px; background-position:0 -156px; top:12px; left:-4px; overflow:hidden;}
+.err{ padding-left:22px; background-position:0 -445px; line-height:30px; *line-height:33px; line-height:33px\9; color:#d10e1e;}
+.regist .tip cite{ float:left;}
+.regist .tip p{ clear:both; overflow:hidden; zoom:1;}
+.regist .tip span{ width:120px; height:12px; margin:3px 0 0 0; overflow:hidden;}
+.regist .tip .level1{ background-position:0 -306px;}
+.regist .tip .level2{ background-position:0 -292px;}
+.regist .tip .level3{ background-position:0 -278px;}
+.regist .tip .level4{ background-position:0 -264px;}
+.regist .tip .level5{ background-position:0 -250px;}
+.regist .btn,.btn1{ width:186px; height:55px; background-position:0 -342px; border:none; cursor:pointer;}
+.regist .btn-cur{ background-position:0 -401px;}
+.red{ color:#ff0000;}
+.btn1{ background-position:0 -224px;}
+.btn1-cur{ background-position:0 -283px;}
+.regist .act{padding:20px 0 0 248px;}
+.regist .rules{height:auto;line-height:1.231;padding:14px 0 0 248px;}
+.regist .note{height:19px;padding:14px 0 0 248px;line-height:19px;color:#999;display:none;}
+/*other*/
+.other{ clear:both; overflow:hidden; zoom:1; padding:15px 0 0 0; width:280px; border-top:1px solid #e0e0e0; margin:20px 0 0 220px; color:#7c7f7c;}
+.other input{ width:26px; height:25px; border:none; cursor:pointer; margin:0 6px 0 0;}
+.other span{ float:left; padding:3px 0 0 0;}
+.other .loginbtn_sina{ background-position:0 -409px;}
+.other .loginbtn_rr{ background-position:-27px -409px;}
+.other .loginbtn_fx{ background-position:-54px -409px;}
+.other .loginbtn_msn{ background-position:-81px -409px;}
+/*regist tip and input*/
+.regist .username,.regist .e-mail{ z-index:1;}
+.wrong .tip-t{ background-position:0 -499px;}
+.wrong .tip-b{ background-position:0 -503px;}
+.wrong .tip-c{border-left:1px solid #f0c3a2; border-right:1px solid #f0c3a2; background:#fbe1d4; color:#d20b1e;}
+.wrong em{ background-position:0 -489px;}
+.regist .tip .icon-w{ width:14px; height:15px; background-position:0 -454px; margin:0 5px 0 0;}
+.regist .tip .icon-c{ width:14px; height:15px; background-position:0 -521px; margin:0;}
+.correct .tip-t,.correct .tip-c,.correct .tip-b,.correct em{ background:none; border:none; border-color:#fff;}
+/*sel-name*/
+.regist .sel-name{ height:auto; line-height:22px; padding:0 0 15px 246px; color:#999999;}
+.regist .sel-name dl{ clear:both; overflow:hidden; zoom:1; width:330px;}
+.regist .sel-name dt{ color:#666666;}
+.regist .sel-name dd{ float:left; width:160px;}
+/*footer*/
+.footer{clear:both; height:85px; text-align:center; color:#5988b3; line-height:35px; width:1000px; margin:0 auto; background:url(foot.jpg) no-repeat; padding-top:11px;}
+.footer a,.footer a:hover { color:#6b6f73;}
+
+
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{padding:0;margin:0;}
+body{font:12px/1.5 "arial",Tahoma,Arial,'宋体',sans-serif;color:#333333;}
+button,input,select,textarea{vertical-align:middle;}
+ol,ul{list-style:none;}
+fieldset,img{border:0;vertical-align:top;}
+table{border-collapse:collapse;border-spacing:0;}
+address,caption,cite,code,dfn,em,th,var{font-weight:normal;font-style:normal;}
+a{text-decoration:none;cursor:pointer;color:#0e7bb8;}
+.clearfix:after {
+	clear: both;
+	content: " ";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+.clearfix {
+	clear: both;
+}
+a:hover{text-decoration:none;color:#0069bd;}
+
+.js_qhuser_css_loaded{width:30px;display:none;}
+.mod-qiuser{
+	margin-left:50px;
+	margin-top:50px;
+	height:30px;
+	
+}
+
+.mod-tab{
+	_width:371px;
+	height:30px;
+	line-height:30px;
+	background-color:#fff;
+	padding:5px 5px 0px 10px;
+	border:1px solid #dfdfdf;
+	
+}
+.mod-tab li{
+	float:left;
+	margin-right:10px;
+	width:80px;
+	border:1px solid #dfdfdf;
+	text-align:center;
+	position:relative;
+	cursor:pointer;
+	top:-1px;
+	_top:1px;
+	
+}
+.mod-tab .cur{
+
+
+	border-bottom:1px solid #fff;
+	font-weight:700;
+}
+.mod-qiuser-pop{
+	width:380px;
+	_width:388px;
+    margin:0 auto;
+	color: #999;
+	font-family:arial,serif,sans-serif;
+	background-color:#fff;
+	padding-top:2px;
+    position:relative;
+    background:transparent;
+}
+
+.mod-qiuser-pop .reg-tips-wrong{
+	color:red;
+}
+
+.mod-qiuser-pop .reg-tips-success{
+	color:#999;
+}
+
+.mod-qiuser-pop .login-wrap dt{
+	font-size: 14px;
+	line-height:30px;
+    height:38px;
+    color:#333;
+	margin-left:20px;
+}
+
+.mod-qiuser-pop .reg-wrap dt{
+	font-size: 14px;
+	line-height:30px;
+    height:20px;
+    color:#333;
+	margin-left:20px;
+}
+
+.mod-qiuser-pop  .reg-wrap dd {
+	height: 65px;
+}
+.mod-qiuser-pop  .login-wrap dd {
+	height: 60px;
+}
+.mod-qiuser-pop .input-bg{
+	padding-left:10px;width:249px;
+	float:left;
+	background:url(login.png) no-repeat 9px -130px;
+	display:inline-block;
+    position:relative;
+}
+
+.mod-qiuser-pop .login-error{
+
+	visibility: hidden;
+	margin-left:73px;
+	width:200px;
+	color:red;
+	position:absolute;
+	top:10px;
+}
+.mod-qiuser-pop label{
+	width:60px;
+	height: 41px;
+	line-height: 41px;
+	float:left;
+	color:#000;
+	font-size: 14px;
+	padding-right: 5px;
+	text-align: right;
+}
+.mod-qiuser-pop .ipt{
+	width: 235px;
+	margin-left: 2px;
+	background: none;
+	outline:none;
+	border: medium none;
+	font: 14px/25px arial,simsun;
+	height: 25px;
+	padding: 8px 6px;
+}
+.mod-qiuser-pop .login-tips{
+	margin-left:74px;
+	font-size:12px;
+	display:inline-block;
+}
+.mod-qiuser-pop .btn{
+	border: medium none;
+	cursor: pointer;
+	height: 55px;
+	width: 186px;
+	background-position: 0 -224px;
+	margin:15px 0px 10px 109px;
+}
+.mod-qiuser-pop .ipt1 {
+	border: medium none;
+	color: #999;
+	float: left;
+	font: bold 20px/25px arial,simsun;
+	height: 25px;
+	outline: medium none;
+	padding: 8px 18px;
+	width: 113px;
+	background-position: 0 -110px;
+}
+
+
+.btn-login{
+	background: url(login_20120213.png) no-repeat;
+	margin-left: 74px;
+	width: 154px;
+	height: 44px;
+	border: 0;
+	background-position: 0 -337px;
+	cursor: pointer;
+    margin-top:10px;
+}
+.btn-register{
+	margin-top: 15px;
+	margin-left: 74px;
+	width: 154px;
+	height: 44px;
+	border: 0;
+	background: url(login.png) no-repeat -88px -283px;
+	cursor: pointer;
+}
+  b.tips-wrong,.rem  b.tips-wrong{
+	margin: 12px 31px 0 -4px;
+	width: 14px;
+	height: 14px;
+	background: url(login.png) no-repeat 20px 0;
+	overflow: hidden;
+	background-position: -366px -24px;
+	float:right;
+	display:none;
+}
+ b.icon-success {
+	background: url(login.png) no-repeat scroll 20px 0 transparent;
+	height: 14px;
+	margin: 12px 0 0 10px;
+	overflow: hidden;
+	width: 14px;
+	float:left;
+	background-position: -365px -38px;
+}
+.rules label{
+	width:184px;
+	font-size:12px;
+	line-height:18px;
+	height:18px;
+}
+.mod-qiuser-pop  .rem  yz{
+float:left
+}
+.mod-qiuser-pop .emptyhint{
+    position:absolute;
+    top:12px;
+    left:19px;
+}
+
+.mod-qiuser-pop .login-wrap .find{
+	height:30px;
+}
+
+.mod-qiuser-pop .login-wrap .rem{
+	height:65px;
+}
+.mod-qiuser-pop .find label{
+	width: 162px;
+	line-height: 20px;
+	height: 20px;
+	font-size: 12px;
+}
+
+.mod-qiuser-pop .find  a{
+	margin-left:100px;
+}
+.mod-qiuser-pop  .verify-code {
+	 background: url(login.png) no-repeat scroll 9px -199px transparent;
+}
+.mod-qiuser-pop  .verify-code .input-txt {
+	width: 110px;
+	background: none repeat scroll 0 0 transparent;
+	border: 0 none;
+	display: inline;
+	font-size: 14px;
+	height: 27px;
+	line-height: 26px;
+	margin: 0 10px;
+	padding: 6px 0;
+}
+.verify-code span{
+	float:left;
+}
+.verify-code em{
+	margin-left:10px;
+}
+.verify-code .code-wrap{
+	margin-left:20px;
+}
+#mod_pop{
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	z-index: 9999;
+	background-color: #888;
+	border-radius: 7px;
+	padding:7px;
+}
+.pop-dia-close{
+	background: url(login_20120517.png) no-repeat;
+	float:right;
+	width: 12px;
+	height: 12px;
+	background-position: -7px 0px;
+	display: inline-block;
+	overflow: hidden;
+	margin:5px;
+}
+.mod-qiuser-pop .other a{ background:url(icon_login_other.png) no-repeat;}
+.mod-qiuser-pop .other{  overflow:hidden; zoom:1;height:31px; padding:10px 0 0 0; width:280px; border-top:1px solid #e0e0e0; margin:10px 0 0 75px; color:#7c7f7c;}
+.mod-qiuser-pop .other a{ width:26px; height:25px; border:none; cursor:pointer; margin:0 6px 0 0;display:inline-block}
+.mod-qiuser-pop .other span{ float:left; padding:3px 0 0 0;}
+.mod-qiuser-pop .other .loginbtn_sina{ background-position:0 -1px;}
+.mod-qiuser-pop .other .loginbtn_rr{ background-position:-27px -1px;}
+.mod-qiuser-pop .other .loginbtn_fx{ background-position:-54px -1px;}
+.mod-qiuser-pop .other .loginbtn_msn{ background-position:-81px -1px;}
+.mod-qiuser-pop .other .loginbtn_qq{ background-position:-107px -1px;}
+
+.mod-qiuser-pop .level1,
+.mod-qiuser-pop .level2,
+.mod-qiuser-pop .level3,
+.mod-qiuser-pop .level4,
+.mod-qiuser-pop .level5{
+	background:url(imgbg.png) no-repeat;
+ 	width:120px;
+ 	height:12px; 
+ 	margin:3px 0 0 0;
+ 	overflow:hidden;
+ 	display: inline-block;
+
+}
+
+.mod-qiuser-pop .level1{ background-position:0 -306px;}
+.mod-qiuser-pop .level2{ background-position:0 -292px;}
+.mod-qiuser-pop .level3{ background-position:0 -278px;}
+.mod-qiuser-pop .level4{ background-position:0 -264px;}
+.mod-qiuser-pop .level5{ background-position:0 -250px;}
+
+.sug_css_wpr  {
+  background-color:white;
+  border:1px solid #cccccc;
+  overflow:hidden;
+  left:74px;
+  margin:0;
+  padding:0;
+  position:absolute;
+  top:60px;
+  z-index:10000;
+  color:#666666;
+  list-style:none;
+  width:240px;
+}
+.sug_css_wpr li{
+  background-color:#FFFFFF;
+  color:#000000;
+  cursor:default;
+  padding:6px 4px;
+  font:12px arial;
+  display:block;
+}
+.sug_css_wpr li.hover{
+  background-color:#E6F4E1;
+  color:#000000;
+}

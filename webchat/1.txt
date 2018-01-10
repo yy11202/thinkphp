@@ -1,0 +1,2 @@
+Boxy.remove();
+M().Send('',{"usr":"<a href=\"javascript:toUsr(3)\" class=\"sex1\">佳蓝<\/a>","msg":"890"});
